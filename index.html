@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pesquisa SenaiTec</title>
 </head>
 <body>
@@ -47,8 +47,103 @@
 
 
             </fieldset>
+            <fieldset>
+                <legend>perfil</legend>
+
+                <p>Gênero</p>
+
+                <input type="radio" name="userGender" id="userGender1" value="Masculino">
+                <label for="userGender1">Masculino</label>
+                <br>
+                <input type="radio" name="userGender" id="userGender2" value="Feminino">
+                <label for="userGender2">Feminino</label>
+                <br>
+                <input type="radio" name="userGender" id="userGender3" value="outro">
+                <label for="userGender3">Prefiro não informar</label>
+                <br>
+
+                <select name="UserMaritalStatus" id="UserMaritalStatus">
+                    <option value="">Selecione o estado civil</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+                <br>
+                <select name="UserEstates" id="UserEstates">
+                 <option value="">Selecione o estado</option>
+                 <option value="AC">Acre</option>
+                 <option value="AL">Alagoas</option>
+                 <option value="AP">Amapá</option>
+                 <option value="AM">Amazonas</option>
+                 <option value="BA">Bahia</option>
+                 <option value="CE">Ceará</option>
+                 <option value="DF">Distrito Federal</option>
+                 <option value="ES">Espírito Santo</option>
+                 <option value="GO">Goiás</option>
+                 <option value="MA">Maranhão</option>
+                 <option value="MT">Mato Grosso</option>
+                 <option value="MS">Mato Grosso do Sul</option>
+                 <option value="MG">Minas Gerais</option>
+                 <option value="PA">Pará</option>
+                 <option value="PB">Paraíba</option>
+                 <option value="PR">Paraná</option>
+                 <option value="PE">Pernambuco</option>
+                 <option value="PI">Piauí</option>
+                 <option value="RJ">Rio de Janeiro</option>
+                 <option value="RN">Rio Grande do Norte</option>
+                 <option value="RS">Rio Grande do Sul</option>
+                 <option value="RO">Rondônia</option>
+                 <option value="RR">Roraima</option>
+                 <option value="SC">Santa Catarina</option>
+                 <option value="SP">São Paulo</option>
+                 <option value="SE">Sergipe</option>
+                 <option value="TO">Tocantins</option>
+                 </select>
+                 <br>
+                    <label for="UserCity">Cidade:</label>
+                    <input type="text" name="UserCity" id="UserCity" placeholder="Digite sua cidade">
+
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes sociais</p>
+        
+                <input type="checkbox" name="userSocialMedia1" id="userSocialMedia1" value="Facebook" icon="facebook">
+                <label for="userSocialMedia1">Facebook</label>
+                <br>
+                <input type="checkbox" name="userSocialMedia2" id="userSocialMedia2" value="Instagram"icon="instagram">
+                <label for="userSocialMedia2">Instagram</label>
+                <br>
+                <input type="checkbox" name="userSocialMedia3" id="userSocialMedia3" value="Twitter"icon="twitter">
+                <label for="userSocialMedia3">Twitter</label>
+                <br>
+                <input type="checkbox" name="userSocialMedia4" id="userSocialMedia4" value="LinkedIn"icon="linkedin">
+                <label for="userSocialMedia4">LinkedIn</label>
+                <br>
+                <p>Estilo musical</p>
+                <label for="userMusicStyle">Selecione seu estilo musical favorito:</label>
+                <input type="text" name="userMusicStyle" id="userMusicStyle" list="musicStyles">
+                <datalist id="musicStyles">
+                    <option value="Rock">
+                    <option value="Pop">
+                    <option value="Sertanejo">
+                    <option value="Funk">
+                    <option value="MPB">
+                    <option value="Eletrônica">
+                </datalist>
+                <br>
+                <p>Cor favorita</p>
+                <div class="color-field">
+                    <input type="color" name="userFavoriteColor" id="userFavoriteColor" value="#c8102e">
+                    <label for="userFavoriteColor">Clique no quadrado para escolher uma cor</label>
+                </div>
+            </fieldset>
             <button type="submit">Enviar</button>
         </form>
+
 
          
     </section></main>
